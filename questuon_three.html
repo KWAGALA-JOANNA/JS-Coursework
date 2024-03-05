@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maximum number</title>
+</head>
+<body>
+    <!-- /Write a javascript function to return the maximum of 3 numbers.
+     Prompt for 3 inputs
+    - Convert to numbers
+    - Pass to the function
+    - Use Math.max to get the maximum.
+    End up with something like this in the UI
+    first number: 90
+    second number: 100
+    third number: 95
+     maximum number: 100 -->
+    
+
+
+     
+     <script>
+     function findMaximum() {
+       // Prompt is used for accepting user input in JS
+       let first_num = prompt("Enter the first number:");
+       let second_num = prompt("Enter the second number:");
+       let third_num = prompt("Enter the third number:");
+     
+       // Converting inputs to numbers or float using parseFloat
+       first_num = parseFloat(first_num);
+       second_num = parseFloat(second_num);
+       third_num = parseFloat(third_num);
+     
+       // Passing numbers to the function to find the maximum number
+       const maximum = getMax(first_num, second_num, third_num);
+     
+       // Displaying the results in the UI
+       alert("First number: " + first_num + "\n" +
+             "Second number: " + second_num + "\n" +
+             "Third number: " + third_num + "\n" +
+             "Maximum number: " + maximum);
+     }
+     
+     function getMax(a, b, c) {
+       // Using Math.max to find the maximum number
+       return Math.max(a, b, c);
+     }
+     </script>
+     </head>
+     <body>
+     
+        <h2>Find Maximum of 3 Numbers</h2>
+        <button onclick="findMaximum()">Find the maximum number</button>
+     
+     
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+
+
+
+
+
+
+</body>
+</html>
